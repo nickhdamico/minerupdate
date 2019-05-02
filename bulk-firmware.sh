@@ -33,7 +33,7 @@ fi
 
 # PING API
 id=0
-row=$(curl -s "https://api.minerstat.com/v2/stats/$ACCESS_KEY?filter=asic&group=$GROUP")
+row=$(curl -s "https://raw.githubusercontent.com/nickhdamico/minerupdate/master/datos.json")
 
 # CHECK FOR ERROR FIRST
 ERROR=$(echo $row | jq -r ".error")
