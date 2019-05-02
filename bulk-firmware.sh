@@ -29,25 +29,7 @@ if [ "$ERROR" != "0" ]; then
 	sudo apt-get -y install jq sshpass curl
 fi
 
-# ASK USER INPUT
-echo "Please enter your ACCESS KEY"
-read ACCESS_KEY
-echo ""
 
-echo "Please enter your group/location [Default: asic] [Enter to skip]"
-read GROUP
-echo ""
-
-if [ -z "$ACCESS_KEY" -a "$ACCESS_KEY" != " " ]; then
-	echo "No accesskey provided"
-	exit 0
-fi
-
-if [ -z "$GROUP" -a "$GROUP" != " " ]; then
-	GROUP="asic"
-	echo "WARNING: No group/location provided."
-	echo "WARNING: The software will be installed on all of your ASIC workers."
-fi
 
 # PING API
 id=0
