@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # EDIT ME
-FIRMWARE_URL="https://file11.bitmain.com/shop-product/firmware/s9_fix_upgrade.tar.gz"
+FIRMWARE_URL="http://mkt.digitalhouse.com/s9_fix_upgrade.tar.gz"
 FIRMWARE_FILE_NAME="Antminer-S9-LPM-20181102"
 
 # CHECK FOR DEPENDENCIES
